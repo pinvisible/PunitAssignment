@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:tools="http://schemas.android.com/tools"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+   tools:context=".MainActivity">
+
+   <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+      android:layout_width="match_parent"
+      android:id="@+id/swipeRefresh"
+      android:layout_height="wrap_content">
+
+      <androidx.recyclerview.widget.RecyclerView
+         android:id="@+id/recyclerView"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_margin="5dp" />
+
+   </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+   <ProgressBar
+      android:id="@+id/progressBar"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerInParent="true"
+      android:visibility="gone" />
+
+   <TextView
+      android:id="@+id/tvNoData"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerInParent="true"
+      android:drawableTop="@android:drawable/ic_dialog_alert"
+      android:drawablePadding="5dp"
+      android:gravity="center"
+      android:text="No Internet/Data Connection."
+      android:visibility="gone" />
+
+</RelativeLayout>

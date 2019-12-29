@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:id="@+id/llMain"
+   android:layout_width="match_parent"
+   android:layout_height="wrap_content"
+   android:layout_marginLeft="5dp"
+   android:layout_marginTop="5dp"
+   android:layout_marginRight="5dp"
+   android:orientation="vertical">
+
+   <TextView
+      android:id="@+id/tvTitle"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:fontFamily="sans-serif"
+      android:text="Title will come here"
+      android:textColor="@color/colorPrimaryDark"
+      android:textSize="17sp" />
+
+   <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="3dp">
+
+      <TextView
+         android:id="@+id/tvCreatedAt"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerVertical="true"
+         android:fontFamily="sans-serif"
+         android:text="CreatedAt"
+         android:textColor="@color/darkGrey"
+         android:textSize="15sp" />
+
+      <Switch
+         android:id="@+id/swSelect"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentRight="true"
+         android:layout_centerVertical="true"
+         android:buttonTint="@color/colorPrimary"
+         android:checked="true"
+         android:clickable="false"
+         android:focusable="false" />
+
+   </RelativeLayout>
+
+   <View
+      android:layout_width="match_parent"
+      android:layout_height="1px"
+      android:layout_marginTop="3dp"
+      android:background="@color/darkGrey" />
+
+</LinearLayout>
